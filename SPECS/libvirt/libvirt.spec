@@ -175,7 +175,7 @@ Summary:        Interface driver plugin for the libvirtd daemon
 
 Requires:       %{name}-daemon = %{version}-%{release}
 Requires:       %{name}-libs = %{version}-%{release}
-Requires:       netcf-libs >= 0.2.2
+#Requires:       netcf-libs >= 0.2.2
 
 %description daemon-driver-interface
 The interface driver plugin for the libvirtd daemon, providing
@@ -189,7 +189,7 @@ Requires:       %{name}-daemon = %{version}-%{release}
 Requires:       %{name}-libs = %{version}-%{release}
 Requires:       dnsmasq
 Requires:       iptables
-Requires:       radvd
+#Requires:       radvd
 
 %description daemon-driver-network
 The network driver plugin for the libvirtd daemon, providing
@@ -230,8 +230,8 @@ Requires:       %{name}-libs = %{version}-%{release}
 Requires:       bzip2
 # For image compression
 Requires:       gzip
-Requires:       lzop
-Requires:       systemd-container
+#Requires:       lzop
+#Requires:       systemd-container
 Requires:       xz
 
 %description daemon-driver-qemu
